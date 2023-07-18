@@ -1,0 +1,25 @@
+calificacion-peli {
+    display: inline-block;
+    position: relative;
+  }
+  
+  calificacion-peli p {
+    cursor: pointer;
+  }
+  
+  calificacion-peli p:hover {
+    color: blue;
+  }
+  
+  calificacion-peli p + p {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: yellow;
+    padding: 5px;
+    display: none;
+  }
+  
+  calificacion-peli p:hover + p {
+    display: block;
+  }
